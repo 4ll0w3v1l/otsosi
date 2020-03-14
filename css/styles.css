@@ -11,7 +11,7 @@ body{
 
 }
 
-.welcomeDiv{
+/*.welcomeDiv{
 
 	position: fixed;
 	width: 100vw;
@@ -31,7 +31,7 @@ body{
     0%{width: 215vw;}
     100%{width:0vw; }
 
-    }
+    }*/
 
 
 .welcomeH{
@@ -43,12 +43,34 @@ body{
     color: white;
     transform: rotate(25deg);
 }
-
 .otsosi{
 
 	position: absolute;
 
 }
+
+.kyb{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 0px;
+	background-color:  red;
+	transform: rotate(25deg);
+	z-index: 2;
+	animation: kyb 5s infinite;
+	animation-timing-function:linear;
+}
+
+	@keyframes kyb{
+
+  0%   {background-color:red; left:50px; top:200px; width: 250px; height: 100px;}
+  25%  {background-color:yellow; left:600px; top:550px;width: 100px; height: 250px;}
+  50%  {background-color:blue; left:300px; top:1100px; width: 250px; height: 100px;}
+  75%  {background-color:green; left:-300px; top:800px; width: 100px; height: 250px;}
+  100% {background-color:red; left:50px; top:200px; width: 250px; height: 100px;}		
+
+	}
 
 .firstPage{
 
@@ -66,7 +88,8 @@ body{
 	position: relative;
 	font-size: 70px;
     font-size: 6vw;
-    top: 700px;
+    top: 840px;
+    left: 240px;
     text-align: center;
-    transform: rotate(-30deg);
+    transform: rotate(-65deg);
 }
