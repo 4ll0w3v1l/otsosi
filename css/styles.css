@@ -6,7 +6,7 @@
 	overflow-y: hidden;
 }
 
-/*.welcomeDiv{
+.welcomeDiv{
 
 	position: fixed;
 	width: 100vw;
@@ -18,7 +18,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function:ease-out;
 	transform: rotate(25deg);
-	z-index: 1;
+	z-index: 6;
 }
 
     @keyframes welcome{
@@ -26,7 +26,7 @@
     0%{width: 215vw;}
     100%{width:0vw; }
 
-    }*/
+    }
 
 
 .welcomeH{
