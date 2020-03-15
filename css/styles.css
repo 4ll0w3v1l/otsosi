@@ -2,13 +2,8 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Play', sans-serif;
-}
-
-body{
-
-	background-color: black;
 	overflow-x: hidden;
-
+	overflow-y: hidden;
 }
 
 /*.welcomeDiv{
@@ -67,18 +62,18 @@ body{
   0%   {background-color:red; left:50px; top:200px; width: 250px; height: 100px;}
   25%  {background-color:yellow; left:600px; top:550px;width: 100px; height: 250px;}
   50%  {background-color:blue; left:300px; top:1100px; width: 250px; height: 100px;}
-  75%  {background-color:green; left:-300px; top:800px; width: 100px; height: 250px;}
-  100% {background-color:red; left:50px; top:200px; width: 250px; height: 100px;}		
+  75%  {background-color:green; left:-300px; top:800px; width: 100px; height: 250px;}		
+  100% {background-color:red; left:50px; top:200px; width: 250px; height: 100px;}
 
 	}
 
-.firstPage{
+#firstPage{
 
 	background-color: black;
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
-	z-index: 0;
+	z-index: 5;
 
 }
 
@@ -92,4 +87,24 @@ body{
     left: 240px;
     text-align: center;
     transform: rotate(-65deg);
+}
+
+.secondPage{
+	position: absolute;
+	background-color: white;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	z-index: 4;
+
+
+}
+
+.secondPage h1{
+
+	position: relative;
+	color: black;
+	font-size: 23vw;
+	z-index: 4;
+
 }
