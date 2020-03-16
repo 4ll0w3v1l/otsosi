@@ -172,17 +172,111 @@
 @keyframes buttonTransitionA{
 
 	0%{height: 20vh; border-radius: 500px; top: 0vh; background-color: black;}
-	100%{height: 120vh; border-radius: 0px; top: -77vh; background-color: white; color: white;}
+	100%{height: 120vh; border-radius: 0px; top: -90vh; background-color: white; color: white;}
 }
 
 #thirdPage{
-
 	position: absolute;
 	background-color: white;
 	height: 100vh;
 	width: 100vw;
-
-
 	z-index: 3;
+
+}
+
+#thirdPage h1{
+
+	position: relative;
+	background-color: black;
+	color: white;
+
+}
+
+#NaN{
+
+	display: none;
+
+}
+
+#NaN1{
+
+	display: none;
+
+}
+
+#NaN2{
+
+	display: none;
+
+}
+#thirdPageTrans{
+
+	position:relative;
+	background-color: black;
+	color: white;
+	height: 74px;
+	animation: thirdPageTransitionH 3s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes thirdPageTransitionH{
+	0%{width: 0vw; text-align: left;}
+	100%{width: 100vw; 	text-align: center;}
+}
+
+#thirdPageTrans2{
+
+	position:relative;
+	background-color: black;
+	color: white;
+	height: 74px;
+	animation: thirdPageTransitionH 3s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes thirdPageTransitionH{
+	0%{width: 0vw; text-align: left;}
+	100%{width: 100vw; 	text-align: center;}
+}
+
+
+#thirdPageForm{
+
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	border-style: hidden;
+	color: black;
+	background-color: black;
+	animation: thirdPageFormTransition 3s 1;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes thirdPageFormTransition{
+	0%{width: 100vw; height: 0vh;}
+	100%{width: 100vw; height: 100vh;}
+
+#inputName{
+
+	position: relative;
+	height:250px; 
+	width: 100vw;font-size: 200px; 
+	text-align: center;
+	border-radius: 180px;
+	top: 30%;
+
+}
+
+#buttonOk{
+
+	position: relative;
+	top: 30%;
+	height:250px; 
+	width: 100vw; 
+	font-size: 200px; 
+	text-align: center;
+	border-radius: 180px;
 
 }
