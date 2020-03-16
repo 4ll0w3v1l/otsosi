@@ -6,7 +6,7 @@
 	overflow-y: hidden;
 }
 
-/*.welcomeDiv{
+.welcomeDiv{
 
 	position: fixed;
 	width: 100vw;
@@ -27,7 +27,7 @@
     100%{width:0vw; }
 
     }
-*/
+
 
 #welcomeH{
 	position: relative;
