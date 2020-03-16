@@ -12,9 +12,9 @@
 	</div>
 	
 	<div id="firstPage">
-		<div class="kyb" onclick="dissapear()"></div>
-			<h1 class="welcomeH">Добро пожаловать на сайт, где</h1>
-			<h1 class="uporotost">Пацанчик чисто упоролся</h1>
+		<div id="kyb" onclick="kyb.style.display='none'; transition1()"></div>
+			<h1 id="welcomeH" onclick="welcomeH.style.display='none'; transition1()">Добро пожаловать на сайт, где</h1>
+			<h1 id="uporotost" onclick="uporotost.style.display='none'; transition1()">Пацанчик чисто упоролся</h1>
 	</div>
 	<div class="secondPage">
 		
@@ -25,13 +25,17 @@
 </body>
 
 <script type="text/javascript">
-	
-	function dissapear(){
+	function transition1() {
 
-		document.getElementById("firstPage").style.zIndex = "-2";
+		var x = document.getElementById('kyb');
+		var y = document.getElementById('welcomeH');
+		var z = document.getElementById('uporotost');
 
+		if(x.style.display === 'none' && y.style.display === 'none' && z.style.display === 'none'){
+			document.getElementById("firstPage").id = "firstPageTransition";
+		}
 	}
-
+	
 </script>
 
 </html>
