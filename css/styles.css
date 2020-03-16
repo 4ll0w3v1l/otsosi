@@ -109,7 +109,7 @@
     transform: rotate(-65deg);
 }
 
-.secondPage{
+#secondPage{
 	position: absolute;
 	background-color: white;
 	z-index: 2;
@@ -120,11 +120,69 @@
 
 }
 
-.secondPage h1{
+#secondPage h1{
 
 	position: relative;
-	color: black;
 	font-size: 23vw;
 	z-index: 4;
+
+}
+
+#button1{
+
+	position: relative;
+	width: 100vw;
+	height: 20vh;
+	border-style: hidden;
+	border-radius: 500px;
+	background-color: black;
+	z-index: 4;
+}
+#button1 h1{
+
+	font-size: 110px;
+	color: white;
+	animation: textTransitionA 3s 1;
+	animation-fill-mode: forwards;
+	z-index: 5;
+}
+
+@keyframes textTransitionA{
+
+	0%{color:white;}
+	100%{color: white;}
+
+}
+
+#buttonTransitionA{
+
+	position: relative;
+	top: 0px;
+	width: 100vw;
+	height: 20vh;
+	border-style: hidden;
+	border-radius: 500px;
+	background-color: black;
+	animation: buttonTransitionA 3s 1;
+	animation-fill-mode: forwards;
+	z-index: 5;
+
+}
+
+@keyframes buttonTransitionA{
+
+	0%{height: 20vh; border-radius: 500px; top: 0vh; background-color: black;}
+	100%{height: 120vh; border-radius: 0px; top: -77vh; background-color: white; color: white;}
+}
+
+#thirdPage{
+
+	position: absolute;
+	background-color: white;
+	height: 100vh;
+	width: 100vw;
+
+
+	z-index: 3;
 
 }

@@ -7,7 +7,7 @@
 	<title>OTSOSI</title>
 </head>
 <body>
-	<div class="welcomeDiv">
+<!-- 	<div class="welcomeDiv">
 
 	</div>
 	
@@ -15,13 +15,21 @@
 		<div id="kyb" onclick="kyb.style.display='none'; transition1()"></div>
 			<h1 id="welcomeH" onclick="welcomeH.style.display='none'; transition1()">Добро пожаловать на сайт, где</h1>
 			<h1 id="uporotost" onclick="uporotost.style.display='none'; transition1()">Пацанчик чисто упоролся</h1>
-	</div>
-	<div class="secondPage">
+	</div> -->
+	<div id="secondPage">
 		
 		<h1>Слыш, тебе штоле куб надоел?!</h1>
 			<p>я, сука, час писал его...</p>
+		<button id="button1" onmouseenter="button1()"><h1>Нажми меня, кста<h1></button>
+	</div>
+
+	<div id="thirdPage">
+		
+		<h1>Тебе предстоит войти в территорию 18+, для начала нужно пройти тест, ебать</h1>
+		<p>как</p>
 
 	</div>
+
 </body>
 
 <script type="text/javascript">
@@ -34,6 +42,16 @@
 		if(x.style.display === 'none' && y.style.display === 'none' && z.style.display === 'none'){
 			document.getElementById("firstPage").id = "firstPageTransition";
 		}
+	}
+
+	function button1(){
+
+		document.getElementById("button1").id = "buttonTransitionA";
+			setTimeout(function(){
+				document.getElementById("secondPage").style.zIndex = "-1";
+				document.getElementById("buttonTransitionA").style.zIndex = "-1";
+				// alert('неплохо нажимаешь, реально');
+			}, 3500);
 	}
 	
 </script>
