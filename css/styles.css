@@ -258,16 +258,7 @@
 	0%{width: 100vw; height: 0vh;}
 	100%{width: 100vw; height: 100vh;}
 
-#inputName{
 
-	position: relative;
-	height:250px; 
-	width: 100vw;font-size: 200px; 
-	text-align: center;
-	border-radius: 180px;
-	top: 30%;
-
-}
 
 #buttonOk{
 
